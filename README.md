@@ -3,7 +3,7 @@ Android Media Streamer Module for Titantium.
 
 This module can be built and used in a project to support MP3, AAC and AAC+ local and remote audio streams. It has been developed to mainly to provide AAC support for the Titanium SDK what is only currently support on iOS.
 
-Below is an outline of the main methods used in the module. A more comprehensive example can be found in example/app.js
+Below is an outline of the main methods used in the module. A more comprehensive example can be found in <a href="https://github.com/trevorf/ti-android-streamer/blob/master/example/app.js">example/app.js</a>
 
 # Require the Audio Streamer module
 Firstly, require the module into the controller 
