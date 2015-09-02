@@ -1,0 +1,16 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AndroidaudiostreamerBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.woohoo.androidaudiostreamer.AndroidaudiostreamerModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.woohoo.androidaudiostreamer.AndroidaudiostreamerModule, ::com::woohoo::androidaudiostreamer::AndroidaudiostreamerModule::bindProxy, ::com::woohoo::androidaudiostreamer::AndroidaudiostreamerModule::dispose
+%%
