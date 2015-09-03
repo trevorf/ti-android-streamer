@@ -8,7 +8,7 @@ description: MP3, AAC & AAC+ Audio Streamer for Android.
 author: Trevor Fifield
 license: Use permitted through purchase or permission given.
 copyright: (c) 2012-2014 Trevelyn Ltd (Woohoo Studios)
-
+architectures: armeabi armeabi-v7a x86
 
 # these should not be edited
 name: androidaudiostreamer
