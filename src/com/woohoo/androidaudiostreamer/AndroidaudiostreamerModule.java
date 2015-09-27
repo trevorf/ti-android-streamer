@@ -110,7 +110,7 @@ public class AndroidaudiostreamerModule extends KrollModule {
 
 	};
 
-	private static MultiPlayer aacPlayer;
+	private static MultiPlayer aacPlayer=null;
 	static AudioManager audioManager = (AudioManager) TiApplication
 			.getInstance().getSystemService(Context.AUDIO_SERVICE);
 
@@ -174,7 +174,9 @@ public class AndroidaudiostreamerModule extends KrollModule {
 	public void play(String url) {
 		if (!isCurrentlyPlaying) {
 		try {
-			aacPlayer = new MultiPlayer(clb);
+			if (aacPlayer==null){
+				aacPlayer = new MultiPlayer(clb);
+			}
 			aacPlayer.playAsync(url);
 			currentUrl = url;
 			isCurrentlyPlaying = true;
